@@ -9,4 +9,4 @@ fuser -k 4000/tcp 2>/dev/null || true
 rm -rf tmp/jekyll-remote-theme-*
 
 bundle exec jekyll clean
-bundle exec jekyll serve --baseurl "" --livereload --port 4000
+bundle exec jekyll serve --baseurl "" --livereload --port 4000 --config _config.yml,_config.local.yml
